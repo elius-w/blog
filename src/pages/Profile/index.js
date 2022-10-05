@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
 
-import Header from "pages/Header"
-import Footer from "pages/Footer"
+import Header from "../../pages/Header"
+import Footer from "../../pages/Footer"
 
-import imgProfile from 'img/ny.jpg'
+import imgProfile from '../../img/ny.jpg'
 
 
 const Profile = ()=>{

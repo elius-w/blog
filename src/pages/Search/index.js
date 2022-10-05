@@ -1,4 +1,5 @@
 
+import React from 'react'
 
 
 import Header from "../../pages/Header"
@@ -8,7 +9,7 @@ import Card from  "../../componentes/Card"
 
 import { useParams } from "react-router-dom"
 import { useState, useEffect} from "react"
-import api from "services/api"
+import api from "../../services/api"
 
 const Search = ()=>{
 

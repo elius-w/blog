@@ -1,14 +1,16 @@
+import React from 'react'
 
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 
-import Home from 'pages/Home'
-import About from 'pages/About'
-import Contact from 'pages/Contact'
-import Login from 'pages/Login'
-import NotFound from 'pages/NotFound'
-import Post from 'pages/Post'
-import Profile from 'pages/Profile'
-import Search from 'pages/Search'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import Login from './pages/Login'
+import NotFound from './pages/NotFound'
+import Post from './pages/Post'
+import Profile from './pages/Profile'
+import Search from './pages/Search'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 const Paths = ()=>{

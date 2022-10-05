@@ -1,3 +1,4 @@
+import React from 'react'
 
 import logo from '../../svg/blog-logo2.svg'
 

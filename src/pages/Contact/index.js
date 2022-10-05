@@ -1,6 +1,7 @@
+import React from 'react'
 
-import Header from "pages/Header"
-import Footer from "pages/Footer"
+import Header from "../../pages/Header"
+import Footer from "../../pages/Footer"
 
 import IconFacebook from '../../svg/icon-facebook.svg';
 import IconInstagram from '../../svg/icon-instagram.svg';

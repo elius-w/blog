@@ -1,15 +1,13 @@
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
+import Header from "../../pages/Header"
+import Footer from "../../pages/Footer"
 
-import Header from "pages/Header"
-import Footer from "pages/Footer"
-
-import Banner from "componentes/Banner";
-import Card from "componentes/Card";
-import Main from "componentes/Main";
+import Banner from "../../componentes/Banner";
+import Card from "../../componentes/Card";
+import Main from "../../componentes/Main";
 import Hero from '../../componentes/Hero'
-import React from "react";
-import logo from '../../svg/blog-logo.svg'
 import star from '../../svg/icon-star.svg'
 
 import api from "../../services/api";

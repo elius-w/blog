@@ -1,15 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react'
 
 
-import Header from "pages/Header"
-import Footer from "pages/Footer"
+import Header from "../../pages/Header"
+import Footer from "../../pages/Footer"
 
 // import imgProfile from 'img/ny.jpg'
 // import imgBanner from 'img/05.png'
 import { useParams } from "react-router"
 import { useState, useEffect} from "react"
 
-import api from "services/api"
+import api from "../../services/api"
 
 
 const Post = ()=>{

@@ -1,5 +1,6 @@
 
 import blog from '../../svg/blog.svg'
+import React from 'react'
 
 import { Link } from 'react-router-dom'
 
