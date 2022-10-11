@@ -26,7 +26,10 @@ const Search = ()=>{
             api.get(`/posts?q=${word}`)
             .then((response) => {
 
-                setSearch(response.data)
+                if(response.data){
+                    setSearch(response.data)
+                    
+                }         
 
             })
         }
@@ -50,6 +53,9 @@ const Search = ()=>{
 
     return(
 
+
+       
+
         <>
             <Header/>
 
@@ -58,12 +64,12 @@ const Search = ()=>{
                 
                 <h6 className="uppercase color-primary text-center">
                     {search.length} resultados
-                </h6>
-
-                <h4 className="text-center">
-                    "{word}"
-                </h4>
-
+                </h6>               
+               
+                   
+                    <h4 className="text-center">{word}</h4>
+                    
+       
                 <form onSubmit={handleSearch}>
                     <div className="row">
                         <div className="grid-2 disappear"></div>
@@ -78,14 +84,23 @@ const Search = ()=>{
                     <div className="row">
 
                     
-                    {                
-                        search.map((item) => {
-                        return <Card key={item.id} content={item} />
-                        })
+                    {    
+                        search.length   
+                        ?(
+
+                            search.map((item) => {
+                            return <Card key={item.id} content={item} />
+                            })
+                        ):(<h6 className="text-center">Ops...Nenhum resultado encontrado</h6>)         
+                        
                     }
 
 
                     </div>
+
+                    
+
+                    
                 </section>
             </div>
 

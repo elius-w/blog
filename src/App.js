@@ -1,26 +1,24 @@
 
 import Paths from './paths';
-import React, { useEffect} from 'react';
-
-
-
+import React from 'react';
+import Provider from './pages/Provider';
 
 
 
 
 function App() {
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "text/javascript";
-    script.id = "getSelo";
-    script.src = `../../js/script.js`;
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.type = "text/javascript";
+  //   script.id = "getSelo";
+  //   script.src = `../../js/script.js`;
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  //   return () => {
+  //     document.body.removeChild(script);
+  //   };
+  // }, []);
   
   
 
@@ -28,7 +26,9 @@ function App() {
   return (
     <>
 
-      <Paths/>
+      <Provider>
+        <Paths/>
+      </Provider>
 
     </>
   );
