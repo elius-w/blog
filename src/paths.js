@@ -6,6 +6,8 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 import Post from './pages/Post'
+import Category from 'pages/Category'
+
 import Profile from './pages/Profile'
 import Search from './pages/Search'
 
@@ -37,6 +39,7 @@ const Paths = ()=>{
                     <Route path="/Contact" element={<Contact/>}/>
                     <Route path="/About" element={<About/>}/>
                     <Route path="/Login" element={<Login/>}/>                    
+                    <Route path="/Category/:idCategory" element={<Category/>}/>
                     <Route path="/Post/:idPost" element={<Post/>}/>
                     <Route path="profile" 
                         element={

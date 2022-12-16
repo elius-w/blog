@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 
 import logo from '../../svg/blog-logo2.svg'
@@ -28,10 +29,10 @@ const Footer = ()=>{
                         <div className="grid-3">
                             <h4>Categorias</h4>
                             <div className="flex-start-column mt-2">
-                                <a href="#" className="color-gray link-footer">Tecnologia</a>
-                                <a href="#" className="color-gray link-footer">Games</a>
-                                <a href="#" className="color-gray link-footer">Fotografia</a>
-                                <a href="#" className="color-gray link-footer">Cinema</a>
+                                <a href="/category/tecnologia" className="color-gray link-footer">Tecnologia</a>
+                                <a href="/category/games" className="color-gray link-footer">Games</a>
+                                <a href="/category/fotografia" className="color-gray link-footer">Fotografia</a>
+                                <a href="/category/cinema" className="color-gray link-footer">Cinema</a>
                             </div>
                         </div>
 
@@ -50,7 +51,7 @@ const Footer = ()=>{
 
                     <div className="row">
                         <div className="grid-9">
-                            <p>2021 | Todos os direitos reservados. Projeto de React.js do curso <a href="https://www.frontpush.com.br/" target="_blank">FrontPUSH.</a> </p>
+                            <p>2022 | Todos os direitos reservados.</p>
                         </div>
 
                         <div className="grid-3">

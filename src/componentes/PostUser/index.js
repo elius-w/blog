@@ -6,7 +6,7 @@ import {useState, useEffect} from 'react'
 import api from "../../services/api"
 import { Link } from "react-router-dom"
 
-const Main = ( {content} )=>{
+const PostUser = ( {content} )=>{
 
     const [user, setUser] = useState([])
 
@@ -16,12 +16,27 @@ const Main = ( {content} )=>{
             api.get('/user/' + content.id_user)
             .then((response)=>{
                 setUser(response.data)
-                console.log(response.data)
             })
         }
         
 
     }, [content])
+
+      //  Função para deletar  post
+    function handleDelete (ev){
+        ev.preventDefault()
+
+        api.delete('/posts/' + content.id)
+
+        .then((response) => {           
+
+            if(window.confirm('Tem certeza que deseja excluir esse Post?')) {
+                window.location.reload(`/profile`);
+            }
+        
+            console.log(response);
+        })
+    }
 
     return(
  
@@ -36,6 +51,9 @@ const Main = ( {content} )=>{
             <p className="mt-2">
                 {content.resume}
             </p>
+            <Link className="link-title" onClick={handleDelete}>
+                <h5 className="btn">Deletar post</h5>
+            </Link>
             <div className="mt-2 flex-space">
                 <div className="flex-start-row">
                     <div className="profile">
@@ -55,4 +73,4 @@ const Main = ( {content} )=>{
  
  }
  
- export default Main
+ export default PostUser

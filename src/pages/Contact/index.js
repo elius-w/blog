@@ -37,13 +37,13 @@ const Contact = ()=>{
                     <h5 className="mt-4">Algumas informações</h5>
 
                     <h6 className="color-primary mt-4">Info.</h6>
-                    <p>Projeto Blog. em React.js do curso FrontPUSH.</p>
+                    <p>Projeto Blog. em React.js</p>
 
                     <h6 className="color-primary mt-4">Address</h6>
-                    <p>Brasília, DF.</p>
+                    <p>Porto Seguro, BA.</p>
 
                     <h6 className="color-primary mt-4">E-mail</h6>
-                    <p>nasser.yousef.unb@gmail.com</p>
+                    <p>helioalves.dev@gmail.com</p>
 
                     <h6 className="color-primary mt-4">Redes sociais</h6>
                     <div className="mt-2">

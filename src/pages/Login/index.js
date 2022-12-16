@@ -78,7 +78,7 @@ const Login = ()=>{
                 <div className="row">
                     <div className="grid-4 disappear"></div>
                     <div className="grid-4">
-                        <h6 className="text-center">Olá, faça o login para continuar.</h6>
+                        <h6 className="text-center">Área de membros, faça o login para continuar.</h6>
 
                         <form onSubmit={handleLogin}>
                             <div className="mt-4">

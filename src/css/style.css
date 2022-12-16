@@ -1902,8 +1902,8 @@ nav {
 .menu-mobile {
   width: 100%;
   height: 100vh;
-  -webkit-transition: .7s ease;
-  transition: .7s ease;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
   position: absolute;
   top: 0;
   left: -100%;
@@ -1925,7 +1925,7 @@ nav {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 24px 16px 24px 16px;
+  padding: 24px 16px 24px 32px;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -2019,6 +2019,7 @@ nav {
   line-height: 26px;
   font-weight: 200;
   position: relative;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
@@ -2114,6 +2115,7 @@ input, select, option, textarea {
 
 input[type=date], select, option {
   height: 44px;
+  outline: none;
 }
 
 /*

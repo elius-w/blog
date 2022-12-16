@@ -16,9 +16,9 @@ const Card = ( {content} )=>{
             </div>
             <div className="p-2">
                 <h6 class="color-gray">{content.date}</h6>
-                <h6 class="uppercase color-primary">{content.category}</h6>
+                <Link to={"/category/" + content.category}><h6 class="uppercase color-primary">{content.category}</h6></Link>
                 <Link to={"/post/" + content.id} class="link-title">
-                    <h4 class="mt-1">{content.title}</h4>
+                    <h5 class="mt-1">{content.title}</h5>
                 </Link>
                 
                 <p class="my-2">

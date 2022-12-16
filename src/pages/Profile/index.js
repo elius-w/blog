@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import {useNavigate} from 'react-router-dom';
 import Header from '../Header';
 import Footer from '../Footer';
@@ -5,9 +6,11 @@ import Footer from '../Footer';
 import Context from '../../pages/Context';
 import React, { useContext, useState, useEffect } from 'react';
 import api from '../../services/api';
-import Main from "../../componentes/Main";
+import PostUser from 'componentes/PostUser';
 
 const Profile = () => {
+
+  
 
   // Importar o contexto e puxar os dados da API
   const { token, idUser } = useContext(Context);
@@ -82,7 +85,7 @@ const Profile = () => {
     })
   }
 
-   // Função para deletar  post
+  //  Função para deletar  post
   //  function handleDelete(ev){
   //   ev.preventDefault();
 
@@ -90,6 +93,8 @@ const Profile = () => {
   //   .then((res) =>{"Deleted sucess"})
   // }
 
+     //  Função para deletar  post
+  
 
   return (
     <>
@@ -130,7 +135,9 @@ const Profile = () => {
               {
 
                   main.map((item) =>{
-                      return <Main key={item.id} content={item}/>
+                      return <PostUser key={item.id} content={item}/>
+                      
+                      
                   })
 
               }                

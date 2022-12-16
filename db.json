@@ -38,7 +38,7 @@
       "resume": "Com o lançamento de novas câmeras, qual a melhor? DSLR ou mirrorless? Qual o melhor custo benefício?",
       "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare urna pharetra ut ac, pellentesque. Ultricies habitasse pretium purus viverra.",
       "duration": "15",
-      "star": "5",
+      "star": "10",
       "views": "3",
       "status": true
     },
@@ -127,89 +127,20 @@
       "id": 9
     },
     {
-      "id_user": 2,
-      "date": "",
-      "imageUrl": "",
-      "category": "tecnologia",
-      "title": "",
-      "resume": "",
-      "content": "",
-      "duration": "5",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 10
-    },
-    {
-      "id_user": 2,
-      "date": "",
-      "imageUrl": "",
-      "category": "tecnologia",
-      "title": "opssss hahaha",
-      "resume": "",
-      "content": "",
-      "duration": "5",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 11
-    },
-    {
-      "id_user": 2,
-      "date": "",
-      "imageUrl": "",
-      "category": "tecnologia",
-      "title": "game over",
+      "id_user": 3,
+      "date": "12 DEZ 2022",
+      "imageUrl": "https://conteudo.imguol.com.br/c/noticias/c6/2022/12/12/um-modelo-do-caca-apresentado-em-julho-de-2022-1670847603397_v2_900x506.jpg.webp",
+      "category": "cinema",
+      "title": "teste cinema",
       "resume": "esse aqui é o  resumo",
-      "content": "If you want to report a bug, please fill out the questions in the issue template that you deleted before posting this. A single line from an error message is not enough information to help you.",
+      "content": "O Reino Unido, o Japão e a Itália estão fazendo uma parceria para desenvolver um novo caça a jato que usa inteligência artificial e tem tecnologias muito mais modernas que a atual geração de caças britânicos. A colaboração foi anunciada pelo primeiro-ministro britânico Rishi Sunak na semana passada. Ele afirmou que a parceria \"manterá o país a salvo das novas ameaças que enfrentamos.\"... - Veja mais em https://noticias.uol.com.br/ultimas-noticias/bbc/2022/12/12/o-ultramoderno-caca-que-le-a-mente-de-piloto-desenvolvido-por-reino-unido-italia-e-japao.htm?cmpid=copiaecola",
       "duration": "5",
       "star": "4",
       "views": "10",
       "status": true,
-      "id": 12
-    },
-    {
-      "id_user": 2,
-      "date": "",
-      "imageUrl": "",
-      "category": "tecnologia",
-      "title": "asdcvavasdv",
-      "resume": "",
-      "content": "",
-      "duration": "5",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 13
-    },
-    {
-      "id_user": 2,
-      "date": "",
-      "imageUrl": "",
-      "category": "tecnologia",
-      "title": "hahaha",
-      "resume": "wefwefwf",
-      "content": "",
-      "duration": "5",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 14
-    },
-    {
-      "id_user": 2,
-      "date": "2022-10-14",
-      "imageUrl": "",
-      "category": "games",
-      "title": "teste",
-      "resume": "esse aqui é o  resumo",
-      "content": "sdcvsac",
-      "duration": "10",
-      "star": "4",
-      "views": "10",
-      "status": true,
-      "id": 15
+      "id": 16
     }
+    
   ],
   "user": [
     {
@@ -237,7 +168,7 @@
       "surname": "Jacob",
       "token": "E10ADC3949BA59ABBE56E057F20F883E",
       "description": "Sou fotógrafo profissional, amante de cinema e tecnologia. Colunista e nas horas vagas escrevo para o blog.",
-      "ImageProfile": "https://nyousefali.com.br/blog/profile/alex.png"
+      "ImageProfile": "https://nyousefali.com.br/blog/profile/emily.png"
     }
   ]
 }

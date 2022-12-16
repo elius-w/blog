@@ -66,16 +66,16 @@ const Post = () => {
               <img src={post.imageUrl} alt="" />
             </div>
 
-            <div className="row my-3">
+            <div className="row my-3 pb-8">
                 <h4>Esse aqui é o primeiro título</h4>
                 <p className="mt-1">
                   {post.content}
                 </p>
             </div>
 
-            <div className="row">
-                <div className="grid-3 disappear"></div>
-                <div className="grid-6 card">
+            <div className="row ">
+                <div className="grid-1 disappear"></div>
+                <div className="grid-10 bt-black">
                     <div className="row">
                         <div className="grid-3 flex-center pl-1">
                             <div className="profile-big">

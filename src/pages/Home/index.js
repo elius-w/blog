@@ -6,6 +6,7 @@ import Footer from "../../pages/Footer"
 
 import Banner from "../../componentes/Banner";
 import Card from "../../componentes/Card";
+import Recent from"../../componentes/Recent"
 import Main from "../../componentes/Main";
 import Hero from '../../componentes/Hero'
 import star from '../../svg/icon-star.svg'
@@ -18,6 +19,7 @@ const Home = ()=>{
 
     const [main, setMain] = useState([])
     const [mostseen, setMostseen] = useState([])
+    const [mostrecent, setRecent] = useState([])
     const [banner, setBanner] = useState([])
 
     useEffect(() => {
@@ -29,7 +31,7 @@ const Home = ()=>{
         })
 
         //Requisição para banner
-        api.get('posts?_limit=1&_order=desc')
+        api.get('posts?id=4')
         .then((response) =>{
             setBanner(response.data)
         })
@@ -38,6 +40,12 @@ const Home = ()=>{
         api.get('posts?_limit=3')
         .then((response) =>{
             setMostseen(response.data)
+        })
+
+        //Requisição
+        api.get('posts?_sort=date&_order=asc&_limit=3')
+        .then((response) =>{
+            setRecent(response.data)
         })
 
     }, [])
@@ -80,10 +88,9 @@ const Home = ()=>{
             </section>
 
 
-
             <div className="bg-section">
                 <section className="container">
-                <h3 className="ml-2 mb-3">Mais vistos</h3>
+                <h5 className="ml-2 mb-3 uppercase">Mais vistos</h5>
                     <div className="row">
 
                     
@@ -98,14 +105,37 @@ const Home = ()=>{
                 </section>
             </div>
 
+            {      
+                banner.map((item) => {
+                return <Banner key={item.id} content={item} />
+                })
+            }
 
 
-        {      
-            banner.map((item) => {
-            return <Banner key={item.id} content={item} />
-            })
-        }
+            <div className="bg-section">
+                <section className="container">
 
+               
+
+                <div className="pl-1">
+                    <div className="row">
+                        <h5 className="mt-1 uppercase pl-3">Recentes</h5>               
+                    </div>
+                </div>
+                      
+
+                    <div className="row">
+                    
+                        {                
+                            mostrecent.map((item) => {
+                            return <Recent key={item.id} content={item} />
+                            })
+                        }
+
+                    </div>
+                </section>
+            </div>
+           
 
         <Footer/>
             

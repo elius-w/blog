@@ -13,7 +13,7 @@ const Banner = ( {content} )=>{
             </div>
             <div className="row mt-3">
                 <h6 className="color-gray text-center">{content.date}</h6>
-                <h6 className="uppercase color-primary text-center">{content.category}</h6>
+                <Link to={"/category/" + content.category}><h6 className="uppercase color-primary text-center">{content.category}</h6></Link>
                 <Link to={"/post/" + content.id} className="link-title">
                     <h2 className="mt-1 text-center">{content.title}</h2>
                 </Link>

@@ -59,8 +59,16 @@ const Header = ()=>{
                         <Link to="/" href=""><img src={logo} alt="" /></Link>
                     </div>
                     <ul className="menu">
-                        <li><Link to="/about" className="p-1">Sobre</Link></li>
-                        <li><Link to="/contact" className="p-1">Contato</Link></li>
+
+
+                        
+                        <li><Link to="/category/tecnologia" className="p-1">Tecnologia</Link></li>
+                        <li><Link to="/category/games" className="p-1">Games</Link></li>
+                        <li><Link to="/category/fotografia" className="p-1">Fotografia</Link></li>
+                        <li><Link to="/category/cinema" className="p-1">Cinema</Link></li>                        
+                        <li><Link to="/about" className="p-1">Sobre</Link></li>                        
+                        <li><Link to="/contact" className="p-1">Contato</Link></li>                        
+
                     </ul>       
                 </nav>
 
@@ -113,14 +121,19 @@ const Header = ()=>{
             <div className="relative">
                 <div className={ `menu-mobile ${show ? 'showmenu' : ''} `}>
                     <ul className="nav-mobile">
-                        <li><Link to="/about" className="link-menu-mobile">Sobre</Link></li>
-                        <li><Link to="/contact" className="link-menu-mobile">Contato</Link></li>
-                        <li className="py-2 pl-2">
+                        <li className="py-2 pl-5 pr-1">
                             <form onSubmit={handleSearch} className="flex">
-                                <input type="text" name="search" placeholder="Buscar..." onChange={onChange} />
+                                <input type="text" name="search" placeholder="Buscar..." onChange={onChange} list="opcoes"/>                                
                                 <button className="btn-search"></button>
                             </form>
                         </li>
+                        <li><Link to="/category/tecnologia" className="link-menu-mobile">Tecnologia</Link></li>
+                        <li><Link to="/category/games" className="link-menu-mobile">Games</Link></li>
+                        <li><Link to="/category/fotografia" className="link-menu-mobile">Fotografia</Link></li>
+                        <li><Link to="/category/cinema" className="link-menu-mobile">Cinema</Link></li>
+                        <li><Link to="/about" className="link-menu-mobile">Sobre</Link></li>
+                        <li><Link to="/contact" className="link-menu-mobile">Contato</Link></li>
+                        
                     </ul>
 
                 </div>

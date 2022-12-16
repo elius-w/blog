@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL: '  https://blog-notices.herokuapp.com/api'
-    // baseURL: '  http://localhost:3000/'
+    // baseURL: 'http://localhost:3000'
+    baseURL: '  https://vercel-backend-blog.vercel.app/'
 })
 
 export default api
