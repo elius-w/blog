@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-<img src="https://helioalves.vercel.app/assets/blog.gif"/>
+<img src="https://i.postimg.cc/9QSCwyvC/blog.gif"/>
 ## Available Scripts
 
 In the project directory, you can run:
