@@ -1,4 +1,4 @@
-Blog
+# Blog
 
 <a href="https://blogtechnews.vercel.app/"><img src="https://i.postimg.cc/9QSCwyvC/blog.gif"/></a>
 
