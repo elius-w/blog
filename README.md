@@ -2,8 +2,8 @@
 
 
 ## Install dependencies:
+yarn or npm install
 ```
-npm start
 
 ## Activate JSON server
 yarn global add json-server or npm i -g json-server
