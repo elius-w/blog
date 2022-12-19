@@ -2,18 +2,22 @@
 
 
 ## Install dependencies:
+
 yarn or npm install
 ```
 
 ## Activate JSON server
+
 yarn global add json-server or npm i -g json-server
 ```
 
-After, go to the root of project and run:
+## After, go to the root of project and run:
+
 json-server --watch db.json --port 3000
 ```
 
 Finally, start dev server
+
 yarn dev or npm run dev
 ```
 
